@@ -115,7 +115,7 @@ document
     const formattedDate = now.toString();
 
     div.innerHTML = `
-    <h2 class="text-xl">${inputQuoata} Taka is Donated for Quota Movement-2024 at Bangladesh</h2>
+    <h2 class="text-md">${inputQuoata} Taka is Donated for Quota Movement-2024 at Bangladesh</h2>
     <p class="text-sm text-gray-500">Date: ${formattedDate}</p>
   `;
 
