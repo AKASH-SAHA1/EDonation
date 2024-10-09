@@ -32,17 +32,25 @@
     </style>
   </head>
   <body class="font-poppins mx-0">
-    <dialog id="my_modal_1" class="modal">
-      <div class="modal-box">
-        <h3 class="text-lg font-bold">Thank You!</h3>
-        <p class="py-4">Your donation has been processed successfully.</p>
+    <dialog id="my_modal_1" class="modal flex items-center justify-center">
+      <div
+        class="modal-box flex flex-col items-center justify-center text-center p-6"
+      >
+        <h1 class="text-lg font-bold text-green-800">Congratulation</h1>
+        <img src="assets/coin.png" alt="Coin Image" class="my-4" />
+        <h3 class="py-4">You have donated for Humankind Successfully</h3>
         <div class="modal-action">
           <form method="dialog">
-            <button class="btn">Close</button>
+            <button
+              class="btn bg-lime-400 text-black hover:bg-lime-700 hover:text-white px-4 py-2 rounded-md transition duration-300"
+            >
+              Close
+            </button>
           </form>
         </div>
       </div>
     </dialog>
+
     <header class="md:container mx-auto sticky top-0 z-50">
       <nav class="bg-yellow-50">
         <div
