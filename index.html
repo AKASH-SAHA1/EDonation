@@ -32,6 +32,17 @@
     </style>
   </head>
   <body class="font-poppins mx-0">
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold">Thank You!</h3>
+        <p class="py-4">Your donation has been processed successfully.</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
     <header class="md:container mx-auto sticky top-0 z-50">
       <nav class="bg-yellow-50">
         <div
@@ -68,13 +79,13 @@
         <br />
         <a
           id="donation-btn"
-          class="bg-lime-200 text-gray-900 px-3 py-2 rounded-md font-semibold inline-flex items-center"
+          class="btn bg-lime-200 text-gray-900 px-3 py-2 rounded-md font-semibold inline-flex items-center"
         >
           Donation
         </a>
         <a
           id="history-btn"
-          class="bg-gray-200 text-gray-900 px-3 py-2 rounded-md font-semibold inline-flex items-center"
+          class="btn bg-gray-200 text-gray-900 px-3 py-2 rounded-md font-semibold inline-flex items-center"
         >
           History
         </a>

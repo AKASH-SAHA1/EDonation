@@ -31,15 +31,18 @@ document
     const formattedDate = now.toString();
 
     div.innerHTML = `
-    <h2 class="text-xl">${inputNoakhali} Taka is Donated for Noakhali Flood-2024 at Noakhali, Bangladesh</h2>
+    <h2 class="text-md">${inputNoakhali} Taka is Donated for Noakhali Flood-2024 at Noakhali, Bangladesh</h2>
     <p class="text-sm text-gray-500">Date: ${formattedDate}</p>
   `;
 
     document.getElementById("history-block").appendChild(div);
 
-    window.alert(
-      `Thank you! Your donation of ${inputNoakhali} BDT was successful.`
-    );
+    // window.alert(
+    //   `Thank you! Your donation of ${inputNoakhali} BDT was successful.`
+    // );
+
+    const modal = document.getElementById("my_modal_1");
+    modal.showModal();
   });
 
 document.getElementById("feni-btn").addEventListener("click", function (event) {
@@ -71,7 +74,7 @@ document.getElementById("feni-btn").addEventListener("click", function (event) {
   const formattedDate = now.toString();
 
   div.innerHTML = `
-    <h2 class="text-xl">${inputFeni} Taka is Donated for Feni Flood-2024 at Noakhali, Bangladesh</h2>
+    <h2 class="text-md">${inputFeni} Taka is Donated for Feni Flood-2024 at Noakhali, Bangladesh</h2>
     <p class="text-sm text-gray-500">Date: ${formattedDate}</p>
   `;
 
@@ -97,11 +100,9 @@ document
       return;
     }
 
-    // Calculate updated values
     const updatedQuoataCollection = totalQuoataCollection + inputQuoata;
     const updatedTotalPocket = originAmount - inputQuoata;
 
-    // Update values in the UI
     document.getElementById("quoata-amount").innerText = parseFloat(
       updatedQuoataCollection
     );
